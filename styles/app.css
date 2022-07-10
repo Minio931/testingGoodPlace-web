@@ -1,0 +1,164 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300;400;500&family=Barlow+Semi+Condensed:wght@600;700&family=Caveat:wght@600;700&family=Montserrat:wght@200;400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300;400;500&family=Barlow+Semi+Condensed:wght@600;700&family=Caveat:wght@600;700&family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap');
+:root{
+    --primary-font: 'Poppins', sans-serif;
+    --primary-color: #EE6C4D;
+    --text-color: #291720;
+    --secondary-font : 'Roboto Slab';
+}
+
+body{
+    font-family: var(--primary-font);  
+    color: var(--text-color);
+    background-image: url(/img/background.svg);
+    background-repeat: no-repeat;
+    background-position: -83px 100px;
+    background-size: 116%;
+
+   
+}
+/* #wrapper-main{
+    background-image: url(/img/2.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+} */
+.section{
+    height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+}
+nav{
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+nav > ul{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+nav > ul > li > a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.5rem;
+}
+#warsztaty{
+    color: var(--primary-color);
+}
+nav > h1{
+    font-weight:bolder;
+    font-size: 2rem;
+}
+nav > h1 > span{
+    color: var(--primary-color);
+}
+
+#welcomeText{
+    line-height: 1.2;
+    width: 40%;
+    height: 50%;
+    display: block;
+    margin-top: 10%;
+}
+#welcomeText > h1{
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+#welcomeText > p{
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+.firstText::before{
+    content: url(/icons/arrow.svg);
+}
+#about > h2{
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    line-height: 1.2;
+}
+#about > p{
+    text-align: justify;
+    font-size: 1.5;
+    font-weight: 500;
+    line-height: 1.5;
+}
+#banner{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+    line-height: 1.2;
+    margin-top: 5%;
+    font-family: var(--secondary-font);
+}
+#header{
+    font-size: 5rem;
+    font-weight: 600;
+    font-style: italic;
+}
+#banner > blockquote{
+    width: 70%;
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-top: 2%;
+}
