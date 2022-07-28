@@ -8,7 +8,7 @@
     <title>Dobre Miejsce</title>
 </head>
 <body>
-    <div id="wrapper-main">
+    <div class="backgroundImage">
     <nav>
         <h1><span>Dobre</span>Miejsce</h1>
         <ul>
@@ -37,8 +37,8 @@
             </p>
         </div>
     </section>
-    
 </div>
+<div id="background-section">
     <section id="about" class="section">
         <h2>
             Magdalena Czarny-Tadla
@@ -58,57 +58,63 @@
                 żywienia, fizjoterapii oraz psychiatrii.</blockquote>
         </div>
     </section>
+
     <section id="offer" class="section">
         <h2>CO OFERUJE "DOBRE MIEJSCE"</h2>
+        <div id="panels">
         <div class="offerPanel">
+         
             <p>Pomoc w ujęciu<br>
                 integracyjnym
             </p>
-            <span>czytaj więcej</span>
+            <span class="readMore">czytaj więcej</span>
         </div>
         <div class="offerPanel">
             <p>Diagnoza Problemu</p>
-            <span>czytaj więcej</span>
+            <span class="readMore">czytaj więcej</span>
         </div>
         <div class="offerPanel">
             <p> pomoc z zakresu <br>
                 Uzależnień Chemicznych<br>
                 I BEhawioralnych
             </p>
-            <span>czytaj więcej</span>
+            <span class="readMore">czytaj więcej</span>
         </div>
         <div class="offerPanel">
             <p>
                 Pomoc osobom <br>
                 z Dysfunkcją Słuchu
             </p>
-            <span>czytaj więcej</span>
+            <span class="readMore">czytaj więcej</span>
         </div>
         <div class="offerPanel">
             <p>BonyFikarta</p>
-            <span>czytaj więcej</span>
+            <span class="readMore">czytaj więcej</span>
         </div>
         <div class="offerPanel">
             <p>działalność<br>
                 Edukacyjno-szkoleniowa
             </p>
-            <span>czytaj więcej</span>
+            <span class="readMore">czytaj więcej</span>
         </div>
+    </div>
         <div id="pill">
             <p>Dowiedz się więcej na temat terapii</p>
         </div>
 
         <p>
-            <span>*Gabinet nie oferuje</span>
+            <span>*Gabinet nie oferuje</span><br>
             Gabinet „DOBRE MIEJSCE” nie świadczy pomocy w zakresie mediacji i uzyskiwania opinii psychologicznej do celów rozwodowych. <br>
             Gabinet „DOBRE MIEJSCE” nie jest instytucją finansowania osób w trudnej sytuacji materialnej.
         </p>
     </section>
+</div>
+<div id="pricingBackground">
     <section id="pricing" class="section">
         <h2>CENNIK</h2>
         <div class="pricingPanel first">
-            <h3>SESJE</h3>
-            <ul>
+            <h3 id="session">SESJE</h3>
+            <ul id="session-list">
                 <li>
                     <span>152 ZŁ</span><br>
                     *PIERWSZA I DRUGA SESJA PRZY KONTYNUOWANIU KONTAKU
@@ -163,35 +169,52 @@
             </ul>
         </div>
     </section>
-    <footer class="section">
+</div>
+    <section class="section contact">
+        <div id="form">
+        <h2>skontaktuj się z nami</h2>
         <form action="">
             <input type="text" placeholder="Imie">
             <input type="text" placeholder="Nazwisko">
-            <input type="text" placeholder="Wiadomość">
+            <input type="email" placeholder="Adres e-mail">
+            <textarea name="message" placeholder="Wiadomość"></textarea>
+            <input type="button" value="Wyślij">
         </form>
+    </div>
         <div id="map">
-
+   
         </div>
-        <div id="footer">
-            <div id="contact">
-                <h4>Kontakt</h4>
+    </section>
+    <footer>
+        <div id="contact">
+            <div id="contact-data">
+            <h4>Kontakt</h4>
+        <ul>
+            <li>531 555 544</li>
+            <li>m.czarny7@wp.pl</li>
+            <li>ul.Rynek 26 <br> 37-500 Jarosław</li>
+        </ul>
+        </div>
+        <div id="contact-menu">
             <ul>
-                <li>531 555 544</li>
-                <li>m.czarny7@wp.pl</li>
-                <li>ul.Rynek 26 <br> 37-500 Jarosław</li>
+                <li>O nas</li>
+                <li>Oferta</li>
+                <li>Cennik</li>
+                <li>Warsztaty</li>
             </ul>
-            </div>
-            <div id="qouteText">
-                Inicjatywa stworzenia „DOBREGO MIEJSCA” zrodziła się 
-                z potrzeby zaoferowania fachowej i rzetelnej
-                pomocy osobom, które w poszukiwaniach 
-                pomocy dla siebie lub swoich bliskich nie miały dotychczas
-                możliwości poczuć się zaopiekowanymi.
-            </div>
-
-            <span id="copyright">Copyright &copy; - 2022 Dobre Miejsce</span>
         </div>
+        </div>
+        <div id="qouteText">
+            Inicjatywa stworzenia „DOBREGO MIEJSCA” zrodziła się 
+            z potrzeby zaoferowania fachowej i rzetelnej
+            pomocy osobom, które w poszukiwaniach 
+            pomocy dla siebie lub swoich bliskich nie miały dotychczas
+            możliwości poczuć się zaopiekowanymi.
+        </div>
+
+        <span id="copyright">Copyright &copy; - 2022 Dobre Miejsce</span>
     </footer>
+   
 
 </body>
 </html>
