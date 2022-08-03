@@ -58,8 +58,7 @@ body{
     font-family: var(--primary-font);  
     color: var(--text-color);
   
-    scroll-behavior: smooth;
-    overflow-x: hidden;
+   overflow-x: hidden;
    
 }
 .backgroundImage{
@@ -73,16 +72,14 @@ body{
 #background-section{
     background: linear-gradient(var(--primary-color), var(--background-color));
 }
-/* #wrapper-main{
-    background-image: url(/img/2.svg);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: contain;
-} */
+
 .section{
     height: 100vh;
     width: 90%;
     margin: 0 auto;
+    
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
 
 nav{
@@ -109,6 +106,30 @@ nav > ul > li > a{
 }
 #warsztaty{
     color: var(--primary-color);
+}
+.nav-link{
+    transition: all 0.3s ease-out ;
+    position: relative;
+}
+/* .nav-link:hover{
+    text-decoration: underline;
+} */
+.nav-link::after{
+    content: "";
+    background-color: var(--primary-color);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0.1em;
+    opacity: 0;
+    transform: translate3d(-100%, 0,0);
+    transition: opacity 300ms, transform 300ms;
+}
+.nav-link:hover::after,
+.nav-link:focus::after{
+    transform: translate3d(0,0,0);
+    opacity: 1;
 }
 nav > h1{
     font-weight:bolder;
@@ -540,6 +561,11 @@ footer #contact{
     color: var(--text-color);
     font-size: 1.2rem;
     font-weight: 600;
+    text-decoration: none;
+}
+#contact-menu > ul > li > a{
+    text-decoration: none;
+    color: var(--text-color);
 }
 #contact-data > ul > li:nth-of-type(1)::before{
     content: url("../icons/Icon\ material-local-phone.svg");

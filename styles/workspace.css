@@ -1,0 +1,25 @@
+:root{
+    --primary-font: 'Poppins', sans-serif;
+    --primary-color: #EE6C4D;
+    --text-color: #291720;
+    --secondary-font : 'Roboto Slab';
+    --background-color: #BABABA;
+}
+#workspace{
+    margin-top: 20px;
+}
+#workspace > h1{
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+
+}
+#workspace > p{
+    font-size: 1.5rem;
+    color: var(--text-color);
+    line-height: 2rem;
+    margin-bottom: 20px;
+}
