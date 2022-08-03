@@ -63,7 +63,7 @@ body{
    
 }
 .backgroundImage{
-    background-image: url(/img/background.png);
+    background-image: url("/img/background.png");
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -322,7 +322,7 @@ transition: all 0.3s ease-in-out;
     
 }
 .readMore::after{
-    content: url(/icons/Icon\ ionic-ios-arrow-down.svg);
+    content: url("/icons/Icon\ ionic-ios-arrow-down.svg");
     position: relative;
     top: 15px;
 }
