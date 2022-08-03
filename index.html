@@ -186,11 +186,15 @@
         <div id="form">
         <h2>skontaktuj się z nami</h2>
         <form action="https://formsubmit.co/9efb385471bfaf2d9e613dfd58ca36d4" method="POST">
-            <input type="text" placeholder="Imie">
-            <input type="text" placeholder="Nazwisko">
-            <input type="email" placeholder="Adres e-mail">
-            <textarea name="message" placeholder="Wiadomość"></textarea>
-            <input type="submit" value="Wyślij">
+            <!--Honeypot-->
+            <input type="text" name=_honey" style="display: none;">
+            <!--Disable Captcha-->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="imie" placeholder="Imie">
+            <input type="text" name="nazwisko"placeholder="Nazwisko">
+            <input type="email" name="e-mail" placeholder="Adres e-mail">
+            <textarea name="wiadomosc" placeholder="Wiadomość"></textarea>
+            <input class="submit" type="submit" value="Wyślij">
         </form>
     </div>
         <div id="map">

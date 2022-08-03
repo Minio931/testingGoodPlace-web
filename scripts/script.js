@@ -112,3 +112,14 @@ function disableOthers(activeItem){
         item.parentNode.classList.remove("expand-panel")
     }
 }
+
+const formSubmitButton = document.querySelector(".submit");
+const inputs = document.querySelectorAll("input");
+
+formSubmitButton.addEventListener("click", (e)=>{
+e.preventDefault();
+alert("Dziękujemy za kontakt \nTwoja wiadomość została wysłana");
+for(let input of inputs){
+    input.innerText = "";
+}
+})
