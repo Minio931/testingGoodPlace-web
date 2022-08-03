@@ -63,7 +63,7 @@ body{
    
 }
 .backgroundImage{
-    background-image: url("/img/background.png");
+    background-image: url("../img/background.png");
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -152,7 +152,7 @@ nav > h1 > span{
     font-size: 1rem;
 }
 .firstText::before{
-    content: url(/icons/arrow.svg);
+    content: url("../icons/arrow.svg");
 }
 #about > h2{
     font-size: 4rem;
@@ -322,7 +322,7 @@ transition: all 0.3s ease-in-out;
     
 }
 .readMore::after{
-    content: url("./icons/Icon\ ionic-ios-arrow-down.svg");
+    content: url("../icons/Icon\ ionic-ios-arrow-down.svg");
     position: relative;
     top: 15px;
 }
@@ -373,7 +373,7 @@ transition: all 0.3s ease-in-out;
     width: 99vw;
     margin-top: -10px;
     height: calc(100vh + 400px);
-    background-image: url(/img/Asset\ 3.png);
+    background-image: url("../img/Asset\ 3.png");
     background-size: cover;
     background-position: center;
 }
@@ -541,15 +541,15 @@ footer #contact{
     font-weight: 600;
 }
 #contact-data > ul > li:nth-of-type(1)::before{
-    content: url(/icons/Icon\ material-local-phone.svg);
+    content: url("../icons/Icon\ material-local-phone.svg");
     padding-right: 4px;
 }
 #contact-data > ul > li:nth-of-type(2)::before{
-    content: url(/icons/Icon\ zocial-email.svg);
+    content: url("../icons/Icon\ zocial-email.svg");
     padding-right: 4px;
 }
 #contact-data > ul > li:nth-of-type(3)::before{
-    content: url(/icons/Icon\ material-location-on.svg);
+    content: url("../icons/Icon\ material-location-on.svg");
     position: relative;
     top: 5px;
     padding-right: 4px;
