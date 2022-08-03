@@ -11,14 +11,19 @@
     <div class="backgroundImage">
     <nav>
         <h1><span>Dobre</span>Miejsce</h1>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">O nas</a></li>
-            <li><a href="#">Oferta</a></li>
-            <li><a href="#">Cennik</a></li>
-            <li><a href="#">Kontakt</a></li>
-            <li><a id="warsztaty" href="#">Warsztaty</a></li>
+        <ul class="nav-menu">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">O nas</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Cennik</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Oferta</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Kontakt</a></li>
+            <li class="nav-item"><a class="nav-link" id="warsztaty" href="#">Warsztaty</a></li>
         </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
     </nav>
     <section id="main" class="section">
         <div id="welcomeText">
@@ -62,18 +67,20 @@
     <section id="offer" class="section">
         <h2>CO OFERUJE "DOBRE MIEJSCE"</h2>
         <div id="panels">
-        <div class="offerPanel">
-         
+        <div class="offerPanel" >
+            <img class="icon first-icon" src="/icons/Icon material-people.svg" alt="icon people">
             <p>Pomoc w ujęciu<br>
                 integracyjnym
             </p>
             <span class="readMore">czytaj więcej</span>
         </div>
         <div class="offerPanel">
+            <img class="icon second-icon" src="/icons/Icon awesome-stethoscope.svg" alt="icon people">
             <p>Diagnoza Problemu</p>
             <span class="readMore">czytaj więcej</span>
         </div>
         <div class="offerPanel">
+            <img class="icon third-icon" src="/icons/Icon ionic-logo-no-smoking.svg" alt="icon people">
             <p> pomoc z zakresu <br>
                 Uzależnień Chemicznych<br>
                 I BEhawioralnych
@@ -81,6 +88,7 @@
             <span class="readMore">czytaj więcej</span>
         </div>
         <div class="offerPanel">
+            <img class="icon fourth-icon" src="/icons/Icon awesome-assistive-listening-systems.svg" alt="icon people">
             <p>
                 Pomoc osobom <br>
                 z Dysfunkcją Słuchu
@@ -88,19 +96,19 @@
             <span class="readMore">czytaj więcej</span>
         </div>
         <div class="offerPanel">
+            <img class="icon fifth-icon" src="/icons/Icon metro-discout.svg" alt="icon people">
             <p>BonyFikarta</p>
             <span class="readMore">czytaj więcej</span>
         </div>
         <div class="offerPanel">
+            <img class="icon sixth-icon" src="/icons/Icon awesome-book-reader.svg" alt="icon people">
             <p>działalność<br>
                 Edukacyjno-szkoleniowa
             </p>
             <span class="readMore">czytaj więcej</span>
         </div>
     </div>
-        <div id="pill">
-            <p>Dowiedz się więcej na temat terapii</p>
-        </div>
+      
 
         <p>
             <span>*Gabinet nie oferuje</span><br>
@@ -168,21 +176,25 @@
                 </li>
             </ul>
         </div>
+        <div class="pill">
+            <p>Dowiedz się więcej na temat terapii</p>
+        </div>
     </section>
+    
 </div>
     <section class="section contact">
         <div id="form">
         <h2>skontaktuj się z nami</h2>
-        <form action="">
+        <form action="https://formsubmit.co/miniosky7@gmail.com" method="POST">
             <input type="text" placeholder="Imie">
             <input type="text" placeholder="Nazwisko">
             <input type="email" placeholder="Adres e-mail">
             <textarea name="message" placeholder="Wiadomość"></textarea>
-            <input type="button" value="Wyślij">
+            <input type="submit" value="Wyślij">
         </form>
     </div>
         <div id="map">
-   
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.618296302615!2d22.68061001559918!3d50.01850917941807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473c9bd9893a6149%3A0x7a4d7e8f9d853c4e!2sRynek%2026%2C%2037-500%20Jaros%C5%82aw!5e0!3m2!1sen!2spl!4v1659442892179!5m2!1sen!2spl"   allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
     <footer>
@@ -215,6 +227,6 @@
         <span id="copyright">Copyright &copy; - 2022 Dobre Miejsce</span>
     </footer>
    
-
+<script src="/scripts/script.js"></script>
 </body>
 </html>
