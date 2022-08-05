@@ -931,6 +931,31 @@ footer > #qouteText{
     #form > form >  input[type="submit"]{
         width: 200px;
     }
+    #form form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    #form form input[name="imie"]{
+        width: 100%;
+        height: 30px;
+    }
+    #form form input[name="nazwisko"]{
+        width: 100%;
+        height: 30px;
+    }
+    #form form input[name="e-mail"]{
+        width: 100%;
+        height: 30px;
+    }
+    #form form textarea{
+        width: 100%;
+        height: 250px;
+    }
+    #form form input[type="submit"]{
+        width: 300px;
+    }
 }
 @media (max-width: 450px){
    #main #welcomeText p{
@@ -1142,5 +1167,17 @@ footer > #qouteText{
         top: 5px;
         padding-right: 4px;
         transform: scale(0.4);
+    }
+    .facebook{
+        width: 260px;
+        right: -100%;
+    }
+    .facebookLogo{
+        width: 40px;
+        transition: 0.3s all ease-in-out;
+    }
+    .facebookLogo.logoActive{
+        top: 240px;
+        right: 0px;
     }
 }
