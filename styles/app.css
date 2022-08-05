@@ -235,6 +235,28 @@ nav > h1 > span{
     height: 90%;
     overflow: hidden;
 }
+.facebook{
+    position: fixed;
+    right: -100%;
+    z-index: 1;
+    bottom: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.facebook.activeFacebook{
+    right: 0;
+}
+.facebookLogo{
+    position: fixed;
+    right: 0;
+    z-index: 1;
+    bottom: 20px;
+    width: 60px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+.facebookLogo.logoActive{
+    right: 300px;
+}
 .offerPanel{
 width: 30%;
 height: 200px;

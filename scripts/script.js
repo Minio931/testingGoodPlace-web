@@ -121,3 +121,12 @@ document.querySelectorAll('a[href^="#"').forEach(anchor =>{
         });
     });
 });
+
+const facebook = document.querySelector(".facebook");
+const facebookLogo = document.querySelector(".facebookLogo");
+
+
+facebookLogo.addEventListener("click", (e)=>{
+    facebook.classList.toggle("activeFacebook");
+    facebookLogo.classList.toggle("logoActive");
+})

@@ -5,6 +5,9 @@
     --secondary-font : 'Roboto Slab';
     --background-color: #BABABA;
 }
+body{
+    overflow: hidden;
+}
 #workspace{
     margin-top: 20px;
 }
