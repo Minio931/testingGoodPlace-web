@@ -6,7 +6,7 @@ pill.addEventListener("click", ()=>{
     
     
     if(pill.innerHTML == "Dowiedz się więcej na temat terapii"){
-        console.log("Kurwa");
+        
         pill.classList.add("pill-expand");
         pill.innerHTML = `Dla kogo psychoterapia krótkoterminowa? <br>
         Z tej formy pomocy mogą skorzystać osoby z zaburzeniami lękowymi, doświadczające przemocy, <br>
